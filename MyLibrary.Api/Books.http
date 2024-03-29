@@ -1,0 +1,30 @@
+GET http://localhost:5016/books
+
+###
+GET http://localhost:5016/books/3
+
+###
+POST http://localhost:5016/books
+Content-Type: application/json
+
+{ 
+    "Title": "The Notebook", 
+    "PublicationYear": 2021, 
+    "Type": "Hardbound", 
+    "Genre": "Love Story" 
+}
+
+###
+PUT http://localhost:5016/books/2
+Content-Type: application/json
+
+{ 
+    "Title": "The Notebook Updated", 
+    "PublicationYear": 2021, 
+    "Type": "Hardbound", 
+    "Genre": "Love Story" 
+}
+
+
+###
+DELETE  http://localhost:5016/books/2
