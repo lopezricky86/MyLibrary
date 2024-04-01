@@ -17,8 +17,9 @@ public static class MapAuthorsEnpoints
 
         group.MapGet("/", async (IUnitOfWork unitOfWork) => {
             var authorDto = await unitOfWork.Authors.GetAuthors();
-    
-            return Results.Ok(authorDto);
+            return authorDto.Count() > 0 ? 
+                    Results.Ok(authorDto) :
+                    Results.NotFound();
         });
 
         // GET book by id
