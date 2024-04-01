@@ -1,20 +1,22 @@
-GET http://localhost:5016/books
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImxvcGV6Iiwic3ViIjoibG9wZXoiLCJqdGkiOiJlNjVkNjFkMSIsInJvbGUiOiJ1c2VyIiwiYXVkIjpbImh0dHA6Ly9sb2NhbGhvc3Q6Mzk0MjQiLCJodHRwczovL2xvY2FsaG9zdDo0NDM5NiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTAxNiIsImh0dHBzOi8vbG9jYWxob3N0OjcxODEiXSwibmJmIjoxNzExOTQ0ODMxLCJleHAiOjE3MTk4MDcyMzEsImlhdCI6MTcxMTk0NDgzMiwiaXNzIjoiZG90bmV0LXVzZXItand0cyJ9.xzNuy5YaZbOUcSsDF6EUSPIAOGWV8tpkWF9a0Gk-fng
-
-###
-GET http://localhost:5016/books/2
+GET http://localhost:5016/authors
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImxvcGV6Iiwic3ViIjoibG9wZXoiLCJqdGkiOiJlNjVkNjFkMSIsInJvbGUiOiJ1c2VyIiwiYXVkIjpbImh0dHA6Ly9sb2NhbGhvc3Q6Mzk0MjQiLCJodHRwczovL2xvY2FsaG9zdDo0NDM5NiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTAxNiIsImh0dHBzOi8vbG9jYWxob3N0OjcxODEiXSwibmJmIjoxNzExOTQ0ODMxLCJleHAiOjE3MTk4MDcyMzEsImlhdCI6MTcxMTk0NDgzMiwiaXNzIjoiZG90bmV0LXVzZXItand0cyJ9.xzNuy5YaZbOUcSsDF6EUSPIAOGWV8tpkWF9a0Gk-fng
 
 
 ###
-POST http://localhost:5016/books
+GET http://localhost:5016/authors/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImxvcGV6Iiwic3ViIjoibG9wZXoiLCJqdGkiOiJlNjVkNjFkMSIsInJvbGUiOiJ1c2VyIiwiYXVkIjpbImh0dHA6Ly9sb2NhbGhvc3Q6Mzk0MjQiLCJodHRwczovL2xvY2FsaG9zdDo0NDM5NiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTAxNiIsImh0dHBzOi8vbG9jYWxob3N0OjcxODEiXSwibmJmIjoxNzExOTQ0ODMxLCJleHAiOjE3MTk4MDcyMzEsImlhdCI6MTcxMTk0NDgzMiwiaXNzIjoiZG90bmV0LXVzZXItand0cyJ9.xzNuy5YaZbOUcSsDF6EUSPIAOGWV8tpkWF9a0Gk-fng
+
+
+
+###
+POST http://localhost:5016/authors
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImxvcGV6Iiwic3ViIjoibG9wZXoiLCJqdGkiOiI5ZTY2NGY5Iiwicm9sZSI6WyJ1c2VyIiwiYWRtaW4iXSwiYXVkIjpbImh0dHA6Ly9sb2NhbGhvc3Q6Mzk0MjQiLCJodHRwczovL2xvY2FsaG9zdDo0NDM5NiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTAxNiIsImh0dHBzOi8vbG9jYWxob3N0OjcxODEiXSwibmJmIjoxNzExOTEwNDEzLCJleHAiOjE3MTk3NzI4MTMsImlhdCI6MTcxMTkxMDQxNCwiaXNzIjoiZG90bmV0LXVzZXItand0cyJ9.MknPWTJBHshvHMj4xxE8jT03qKBwKB4NJhyPMviI3ak
 Content-Type: application/json
 
 { 
-    "Title": "The NoteBook7", 
-    "PublicationYear": "1900", 
-    "Type": "Hardbound", 
-    "Genre": "Sci Fi",
-    "AuthorId": 1
+    "FirstName": "Karen",
+    "LastName": "Lopez",
+    "Gender": "Female",
+    "DateOfBirth": "1990-10-15"
 }
+

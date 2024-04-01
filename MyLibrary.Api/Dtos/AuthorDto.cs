@@ -2,7 +2,7 @@
 
 public record class AuthorDto(
     int AuthorId,
-    string FullName,
-    string Gender,
-    DateOnly DateOfBirth
+    string FullName,    
+    DateOnly DateOfBirth,
+    int Age
 );

@@ -1,8 +1,11 @@
-﻿namespace MyLibrary.Api.Dtos;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace MyLibrary.Api.Dtos;
 
 public record class CreateBookDto(    
-    string Title,
-    int PublicationYear,
+    [Required] string Title,
+    [Required] int AuthorId,
+    [Range(1900, int.MaxValue, ErrorMessage = "PublicationYear is invalid")] int PublicationYear,
     string Type,
     string Genre
 );
