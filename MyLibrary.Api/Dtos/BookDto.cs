@@ -4,6 +4,7 @@ public record class BookDto(
     int BookId,
     string Title,
     int PublicationYear,
-    string Type,
-    string Genre
+    string? Type,
+    string? Genre,
+    string AuthorName
 );
